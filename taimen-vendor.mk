@@ -449,7 +449,6 @@ PRODUCT_PACKAGES += \
     libGLESv2_adreno \
     libq3dtools_adreno \
     libq3dtools_esx \
-    activity_recognition.msm8998 \
     android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.keymaster@3.0-impl-qti \
     gatekeeper.msm8998 \
