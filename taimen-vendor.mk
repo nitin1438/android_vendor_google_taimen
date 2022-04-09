@@ -178,7 +178,6 @@ PRODUCT_PACKAGES += \
     uceShimService \
     vzw_msdc_api \
     CNEService \
-    OemDmTrigger \
     qcrilmsgtunnel \
     CarrierSettings \
     DevicePersonalizationPrebuiltPixel2 \
