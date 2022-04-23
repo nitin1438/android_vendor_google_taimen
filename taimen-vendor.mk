@@ -179,7 +179,6 @@ PRODUCT_PACKAGES += \
     vzw_msdc_api \
     CNEService \
     qcrilmsgtunnel \
-    CarrierSettings \
     DevicePersonalizationPrebuiltPixel2 \
     DiagMon \
     EuiccGoogle \
