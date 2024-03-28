@@ -980,3 +980,17 @@ PRODUCT_PACKAGES += \
     wahoo_gfxdrv \
     qti-vzw-ims-internal \
     manifest_android.hardware.drm@1.3-service.widevine.xml
+
+PRODUCT_PACKAGES += \
+    eglSubDriverAndroid_eglSubDriverAndroid_symlink32 \
+    libEGL_adreno_libEGL_adreno_symlink32 \
+    libGLESv1_CM_adreno_libGLESv1_CM_adreno_symlink32 \
+    libGLESv2_adreno_libGLESv2_adreno_symlink32 \
+    libq3dtools_adreno_libq3dtools_adreno_symlink32 \
+    libq3dtools_esx_libq3dtools_esx_symlink32 \
+    eglSubDriverAndroid_eglSubDriverAndroid_symlink64 \
+    libEGL_adreno_libEGL_adreno_symlink64 \
+    libGLESv1_CM_adreno_libGLESv1_CM_adreno_symlink64 \
+    libGLESv2_adreno_libGLESv2_adreno_symlink64 \
+    libq3dtools_adreno_libq3dtools_adreno_symlink64 \
+    libq3dtools_esx_libq3dtools_esx_symlink64
