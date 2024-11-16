@@ -215,7 +215,6 @@ PRODUCT_PACKAGES += \
     RadioConfigLib \
     com.android.hotwordenrollment.common.util
 PRODUCT_COPY_FILES += \
-    vendor/google/taimen/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/google/taimen/proprietary/vendor/bin/KmInstallKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/KmInstallKeybox \
     vendor/google/taimen/proprietary/vendor/bin/PktRspTest:$(TARGET_COPY_OUT_VENDOR)/bin/PktRspTest \
     vendor/google/taimen/proprietary/vendor/bin/StoreKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/StoreKeybox \
@@ -925,7 +924,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/taimen/proprietary/vendor/lib64/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwms.so \
     vendor/google/taimen/proprietary/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so \
     vendor/google/taimen/proprietary/vendor/lib64/sensors.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.msm8998.so \
-    vendor/google/taimen/proprietary/vendor/lib64/vendor.qti.atcmdfwd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.atcmdfwd@1.0.so \
     vendor/google/taimen/proprietary/vendor/lib64/vendor.qti.qcril.am@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qcril.am@1.0.so \
     vendor/google/taimen/proprietary/vendor/mbn/mcfg/configs/mcfg_sw/generic/APAC/Reliance/Commercial/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/mbn/mcfg/configs/mcfg_sw/generic/APAC/Reliance/Commercial/mcfg_sw.mbn \
     vendor/google/taimen/proprietary/vendor/mbn/mcfg/configs/mcfg_sw/generic/AUS/Default/VoLTE/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/mbn/mcfg/configs/mcfg_sw/generic/AUS/Default/VoLTE/mcfg_sw.mbn \
