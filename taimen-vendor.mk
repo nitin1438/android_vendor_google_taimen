@@ -216,7 +216,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libimscamera_jni_libimscamera_jni_symlink64 \
-    libimsmedia_jni_libimsmedia_jni_symlink64
+    libimsmedia_jni_libimsmedia_jni_symlink64 \
+    libdmengine_libdmengine_symlink32 \
+    libdmjavaplugin_libdmjavaplugin_symlink32
 PRODUCT_COPY_FILES += \
     vendor/google/taimen/proprietary/vendor/bin/KmInstallKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/KmInstallKeybox \
     vendor/google/taimen/proprietary/vendor/bin/PktRspTest:$(TARGET_COPY_OUT_VENDOR)/bin/PktRspTest \
