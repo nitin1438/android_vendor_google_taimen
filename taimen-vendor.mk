@@ -6,48 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/google/taimen
 
 PRODUCT_COPY_FILES += \
-    vendor/google/taimen/proprietary/bin/move_widevine_data.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/move_widevine_data.sh \
-    vendor/google/taimen/proprietary/etc/cne/Nexus/ATT/ATT_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ATT/ATT_profiles.xml \
-    vendor/google/taimen/proprietary/etc/cne/Nexus/ROW/ROW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ROW/ROW_profiles.xml \
-    vendor/google/taimen/proprietary/etc/cne/Nexus/VZW/VZW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/VZW/VZW_profiles.xml \
-    vendor/google/taimen/proprietary/etc/firmware/dnd.descriptor:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/dnd.descriptor \
-    vendor/google/taimen/proprietary/etc/firmware/dnd.sound_model:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/dnd.sound_model \
-    vendor/google/taimen/proprietary/etc/firmware/music_detector.descriptor:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/music_detector.descriptor \
-    vendor/google/taimen/proprietary/etc/firmware/music_detector.sound_model:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/music_detector.sound_model \
-    vendor/google/taimen/proprietary/etc/permissions/com.google.android.camera.experimental2017.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.google.android.camera.experimental2017.xml \
-    vendor/google/taimen/proprietary/etc/permissions/com.verizon.embms.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.verizon.embms.xml \
-    vendor/google/taimen/proprietary/etc/permissions/privapp-permissions-aosp_wahoo.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-aosp_wahoo.xml \
-    vendor/google/taimen/proprietary/etc/permissions/privapp-permissions-google.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-google.xml \
-    vendor/google/taimen/proprietary/etc/permissions/privapp-permissions-wahoo.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-wahoo.xml \
-    vendor/google/taimen/proprietary/etc/sysconfig/pixel_2017_exclusive.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_2017_exclusive.xml \
-    vendor/google/taimen/proprietary/lib/com.qualcomm.qti.ims.radio@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.ims.radio@1.0.so \
-    vendor/google/taimen/proprietary/lib/com.qualcomm.qti.imsrtpservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.imsrtpservice@1.0.so \
-    vendor/google/taimen/proprietary/lib/com.qualcomm.qti.qcril.qcrilhook@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.qcril.qcrilhook@1.0.so \
-    vendor/google/taimen/proprietary/lib/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvideocodec.so \
-    vendor/google/taimen/proprietary/lib/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvt.so \
-    vendor/google/taimen/proprietary/lib/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvtextutils.so \
-    vendor/google/taimen/proprietary/lib/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvtutils.so \
-    vendor/google/taimen/proprietary/lib/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdiag_system.so \
-    vendor/google/taimen/proprietary/lib/libeaselcomm.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libeaselcomm.so \
-    vendor/google/taimen/proprietary/lib/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimscamera_jni.so \
-    vendor/google/taimen/proprietary/lib/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimsmedia_jni.so \
-    vendor/google/taimen/proprietary/lib/librcc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/librcc.so \
-    vendor/google/taimen/proprietary/lib/vendor.qti.qcril.am@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.qcril.am@1.0.so \
-    vendor/google/taimen/proprietary/lib64/com.qualcomm.qti.ims.radio@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.qualcomm.qti.ims.radio@1.0.so \
-    vendor/google/taimen/proprietary/lib64/com.qualcomm.qti.imsrtpservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.qualcomm.qti.imsrtpservice@1.0.so \
-    vendor/google/taimen/proprietary/lib64/com.qualcomm.qti.qcril.qcrilhook@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.qualcomm.qti.qcril.qcrilhook@1.0.so \
-    vendor/google/taimen/proprietary/lib64/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvideocodec.so \
-    vendor/google/taimen/proprietary/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvt.so \
-    vendor/google/taimen/proprietary/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvtextutils.so \
-    vendor/google/taimen/proprietary/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvtutils.so \
-    vendor/google/taimen/proprietary/lib64/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdiag_system.so \
-    vendor/google/taimen/proprietary/lib64/libeaselcomm.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libeaselcomm.so \
-    vendor/google/taimen/proprietary/lib64/libfacenet.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libfacenet.so \
-    vendor/google/taimen/proprietary/lib64/libfrsdk.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libfrsdk.so \
-    vendor/google/taimen/proprietary/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimscamera_jni.so \
-    vendor/google/taimen/proprietary/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimsmedia_jni.so \
-    vendor/google/taimen/proprietary/lib64/librcc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/librcc.so \
-    vendor/google/taimen/proprietary/lib64/vendor.qti.qcril.am@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.qcril.am@1.0.so \
     vendor/google/taimen/proprietary/product/etc/CarrierSettings/airtel_in.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/airtel_in.pb \
     vendor/google/taimen/proprietary/product/etc/CarrierSettings/apt_tw.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/apt_tw.pb \
     vendor/google/taimen/proprietary/product/etc/CarrierSettings/att5g_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/att5g_us.pb \
@@ -169,6 +127,48 @@ PRODUCT_COPY_FILES += \
     vendor/google/taimen/proprietary/product/lib/libdmjavaplugin.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libdmjavaplugin.so \
     vendor/google/taimen/proprietary/product/priv-app/MyVerizonServices/lib/arm64/libakuaf.so:$(TARGET_COPY_OUT_PRODUCT)/priv-app/MyVerizonServices/lib/arm64/libakuaf.so \
     vendor/google/taimen/proprietary/product/priv-app/MyVerizonServices/lib/arm64/libmotricity.so:$(TARGET_COPY_OUT_PRODUCT)/priv-app/MyVerizonServices/lib/arm64/libmotricity.so \
+    vendor/google/taimen/proprietary/system/bin/move_widevine_data.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/move_widevine_data.sh \
+    vendor/google/taimen/proprietary/system/etc/cne/Nexus/ATT/ATT_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ATT/ATT_profiles.xml \
+    vendor/google/taimen/proprietary/system/etc/cne/Nexus/ROW/ROW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ROW/ROW_profiles.xml \
+    vendor/google/taimen/proprietary/system/etc/cne/Nexus/VZW/VZW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/VZW/VZW_profiles.xml \
+    vendor/google/taimen/proprietary/system/etc/firmware/dnd.descriptor:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/dnd.descriptor \
+    vendor/google/taimen/proprietary/system/etc/firmware/dnd.sound_model:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/dnd.sound_model \
+    vendor/google/taimen/proprietary/system/etc/firmware/music_detector.descriptor:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/music_detector.descriptor \
+    vendor/google/taimen/proprietary/system/etc/firmware/music_detector.sound_model:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/music_detector.sound_model \
+    vendor/google/taimen/proprietary/system/etc/permissions/com.google.android.camera.experimental2017.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.google.android.camera.experimental2017.xml \
+    vendor/google/taimen/proprietary/system/etc/permissions/com.verizon.embms.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.verizon.embms.xml \
+    vendor/google/taimen/proprietary/system/etc/permissions/privapp-permissions-aosp_wahoo.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-aosp_wahoo.xml \
+    vendor/google/taimen/proprietary/system/etc/permissions/privapp-permissions-google.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-google.xml \
+    vendor/google/taimen/proprietary/system/etc/permissions/privapp-permissions-wahoo.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-wahoo.xml \
+    vendor/google/taimen/proprietary/system/etc/sysconfig/pixel_2017_exclusive.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_2017_exclusive.xml \
+    vendor/google/taimen/proprietary/system/lib/com.qualcomm.qti.ims.radio@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.ims.radio@1.0.so \
+    vendor/google/taimen/proprietary/system/lib/com.qualcomm.qti.imsrtpservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.imsrtpservice@1.0.so \
+    vendor/google/taimen/proprietary/system/lib/com.qualcomm.qti.qcril.qcrilhook@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.qcril.qcrilhook@1.0.so \
+    vendor/google/taimen/proprietary/system/lib/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvideocodec.so \
+    vendor/google/taimen/proprietary/system/lib/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvt.so \
+    vendor/google/taimen/proprietary/system/lib/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvtextutils.so \
+    vendor/google/taimen/proprietary/system/lib/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvtutils.so \
+    vendor/google/taimen/proprietary/system/lib/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdiag_system.so \
+    vendor/google/taimen/proprietary/system/lib/libeaselcomm.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libeaselcomm.so \
+    vendor/google/taimen/proprietary/system/lib/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimscamera_jni.so \
+    vendor/google/taimen/proprietary/system/lib/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimsmedia_jni.so \
+    vendor/google/taimen/proprietary/system/lib/librcc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/librcc.so \
+    vendor/google/taimen/proprietary/system/lib/vendor.qti.qcril.am@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.qcril.am@1.0.so \
+    vendor/google/taimen/proprietary/system/lib64/com.qualcomm.qti.ims.radio@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.qualcomm.qti.ims.radio@1.0.so \
+    vendor/google/taimen/proprietary/system/lib64/com.qualcomm.qti.imsrtpservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.qualcomm.qti.imsrtpservice@1.0.so \
+    vendor/google/taimen/proprietary/system/lib64/com.qualcomm.qti.qcril.qcrilhook@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.qualcomm.qti.qcril.qcrilhook@1.0.so \
+    vendor/google/taimen/proprietary/system/lib64/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvideocodec.so \
+    vendor/google/taimen/proprietary/system/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvt.so \
+    vendor/google/taimen/proprietary/system/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvtextutils.so \
+    vendor/google/taimen/proprietary/system/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvtutils.so \
+    vendor/google/taimen/proprietary/system/lib64/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdiag_system.so \
+    vendor/google/taimen/proprietary/system/lib64/libeaselcomm.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libeaselcomm.so \
+    vendor/google/taimen/proprietary/system/lib64/libfacenet.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libfacenet.so \
+    vendor/google/taimen/proprietary/system/lib64/libfrsdk.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libfrsdk.so \
+    vendor/google/taimen/proprietary/system/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimscamera_jni.so \
+    vendor/google/taimen/proprietary/system/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimsmedia_jni.so \
+    vendor/google/taimen/proprietary/system/lib64/librcc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/librcc.so \
+    vendor/google/taimen/proprietary/system/lib64/vendor.qti.qcril.am@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.qti.qcril.am@1.0.so \
     vendor/google/taimen/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/google/taimen/proprietary/system_ext/etc/permissions/com.android.omadm.radioconfig.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.omadm.radioconfig.xml \
     vendor/google/taimen/proprietary/system_ext/etc/permissions/privapp-permissions-google-se.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-google-se.xml
@@ -215,10 +215,10 @@ PRODUCT_PACKAGES += \
     com.android.hotwordenrollment.common.util
 
 PRODUCT_PACKAGES += \
-    libimscamera_jni_libimscamera_jni_symlink64 \
-    libimsmedia_jni_libimsmedia_jni_symlink64 \
     libdmengine_libdmengine_symlink32 \
-    libdmjavaplugin_libdmjavaplugin_symlink32
+    libdmjavaplugin_libdmjavaplugin_symlink32 \
+    libimscamera_jni_libimscamera_jni_symlink64 \
+    libimsmedia_jni_libimsmedia_jni_symlink64
 PRODUCT_COPY_FILES += \
     vendor/google/taimen/proprietary/vendor/bin/KmInstallKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/KmInstallKeybox \
     vendor/google/taimen/proprietary/vendor/bin/PktRspTest:$(TARGET_COPY_OUT_VENDOR)/bin/PktRspTest \

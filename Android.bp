@@ -10,7 +10,7 @@ soong_namespace {
 android_app_import {
 	name: "QAS_DVC_MSP_VZW",
 	owner: "google",
-	apk: "proprietary/app/QAS_DVC_MSP_VZW/QAS_DVC_MSP_VZW.apk",
+	apk: "proprietary/system/app/QAS_DVC_MSP_VZW/QAS_DVC_MSP_VZW.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -20,7 +20,7 @@ android_app_import {
 android_app_import {
 	name: "ims",
 	owner: "google",
-	apk: "proprietary/app/ims/ims.apk",
+	apk: "proprietary/system/app/ims/ims.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -30,7 +30,7 @@ android_app_import {
 android_app_import {
 	name: "uceShimService",
 	owner: "google",
-	apk: "proprietary/app/uceShimService/uceShimService.apk",
+	apk: "proprietary/system/app/uceShimService/uceShimService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -40,7 +40,7 @@ android_app_import {
 android_app_import {
 	name: "vzw_msdc_api",
 	owner: "google",
-	apk: "proprietary/app/vzw_msdc_api/vzw_msdc_api.apk",
+	apk: "proprietary/system/app/vzw_msdc_api/vzw_msdc_api.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -50,7 +50,7 @@ android_app_import {
 android_app_import {
 	name: "CNEService",
 	owner: "google",
-	apk: "proprietary/priv-app/CNEService/CNEService.apk",
+	apk: "proprietary/system/priv-app/CNEService/CNEService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -61,7 +61,7 @@ android_app_import {
 android_app_import {
 	name: "OemDmTrigger",
 	owner: "google",
-	apk: "proprietary/priv-app/OemDmTrigger/OemDmTrigger.apk",
+	apk: "proprietary/system/priv-app/OemDmTrigger/OemDmTrigger.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -72,7 +72,7 @@ android_app_import {
 android_app_import {
 	name: "qcrilmsgtunnel",
 	owner: "google",
-	apk: "proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	apk: "proprietary/system/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -359,43 +359,43 @@ android_app_import {
 dex_import {
 	name: "cneapiclient",
 	owner: "google",
-	jars: ["proprietary/framework/cneapiclient.jar"],
+	jars: ["proprietary/system/framework/cneapiclient.jar"],
 }
 
 dex_import {
 	name: "com.google.android.camera.experimental2017",
 	owner: "google",
-	jars: ["proprietary/framework/com.google.android.camera.experimental2017.jar"],
+	jars: ["proprietary/system/framework/com.google.android.camera.experimental2017.jar"],
 }
 
 dex_import {
 	name: "com.quicinc.cne.api-V1.0-java",
 	owner: "google",
-	jars: ["proprietary/framework/com.quicinc.cne.api-V1.0-java.jar"],
+	jars: ["proprietary/system/framework/com.quicinc.cne.api-V1.0-java.jar"],
 }
 
 dex_import {
 	name: "com.quicinc.cne",
 	owner: "google",
-	jars: ["proprietary/framework/com.quicinc.cne.jar"],
+	jars: ["proprietary/system/framework/com.quicinc.cne.jar"],
 }
 
 dex_import {
 	name: "qcrilhook",
 	owner: "google",
-	jars: ["proprietary/framework/qcrilhook.jar"],
+	jars: ["proprietary/system/framework/qcrilhook.jar"],
 }
 
 dex_import {
 	name: "rcsimssettings",
 	owner: "google",
-	jars: ["proprietary/framework/rcsimssettings.jar"],
+	jars: ["proprietary/system/framework/rcsimssettings.jar"],
 }
 
 dex_import {
 	name: "vendor.qti.qcril.am-V1.0-java",
 	owner: "google",
-	jars: ["proprietary/framework/vendor.qti.qcril.am-V1.0-java.jar"],
+	jars: ["proprietary/system/framework/vendor.qti.qcril.am-V1.0-java.jar"],
 }
 
 dex_import {
@@ -420,18 +420,6 @@ dex_import {
 }
 
 install_symlink {
-	name: "libimscamera_jni_libimscamera_jni_symlink64",
-	installed_location: "app/ims/lib/arm64/libimscamera_jni.so",
-	symlink_target: "/lib64/libimscamera_jni.so",
-}
-
-install_symlink {
-	name: "libimsmedia_jni_libimsmedia_jni_symlink64",
-	installed_location: "app/ims/lib/arm64/libimsmedia_jni.so",
-	symlink_target: "/lib64/libimsmedia_jni.so",
-}
-
-install_symlink {
 	name: "libdmengine_libdmengine_symlink32",
 	product_specific: true,
 	installed_location: "priv-app/DMService/lib/arm/libdmengine.so",
@@ -443,6 +431,18 @@ install_symlink {
 	product_specific: true,
 	installed_location: "priv-app/DMService/lib/arm/libdmjavaplugin.so",
 	symlink_target: "/product/lib/libdmjavaplugin.so",
+}
+
+install_symlink {
+	name: "libimscamera_jni_libimscamera_jni_symlink64",
+	installed_location: "system/app/ims/lib/arm64/libimscamera_jni.so",
+	symlink_target: "/system/lib64/libimscamera_jni.so",
+}
+
+install_symlink {
+	name: "libimsmedia_jni_libimsmedia_jni_symlink64",
+	installed_location: "system/app/ims/lib/arm64/libimsmedia_jni.so",
+	symlink_target: "/system/lib64/libimsmedia_jni.so",
 }
 
 cc_prebuilt_library_shared {
