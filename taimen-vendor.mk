@@ -204,6 +204,35 @@ PRODUCT_PACKAGES += \
     system_app_ims_lib_arm64_libimsmedia_jni_so
 
 PRODUCT_COPY_FILES += \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/CFCMModule.so.1:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/CFCMModule.so.1 \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/EtsiAmrWbPlusDecModule.so.1:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/EtsiAmrWbPlusDecModule.so.1 \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/EtsiEaacPlusEncAndCmnModule.so.1:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/EtsiEaacPlusEncAndCmnModule.so.1 \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/HeaacDecoderModule.so.1:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/HeaacDecoderModule.so.1 \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/HpMp2DecoderModule.so.1:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/HpMp2DecoderModule.so.1 \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/SAPlusCmnModule.so.1:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/SAPlusCmnModule.so.1 \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/activity.napp_header:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/activity.napp_header \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/activity.so:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/activity.so \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/cc.napp_header:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/cc.napp_header \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/cc.so:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/cc.so \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/chre_drv_loc.so:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/chre_drv_loc.so \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/chre_drv_modem.so:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/chre_drv_modem.so \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/chre_drv_wifi.so:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/chre_drv_wifi.so \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/chre_pal.so:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/chre_pal.so \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/elmyra.napp_header:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/elmyra.napp_header \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/elmyra.so:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/elmyra.so \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/fastrpc_shell_0:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/fastrpc_shell_0 \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/fluence_voiceplus_module.so.1:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/fluence_voiceplus_module.so.1 \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/geofence.napp_header:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/geofence.napp_header \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/geofence.so:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/geofence.so \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/gesture.napp_header:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/gesture.napp_header \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/gesture.so:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/gesture.so \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/imu_cal.napp_header:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/imu_cal.napp_header \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/imu_cal.so:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/imu_cal.so \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/libchre_slpi_skel.so:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/libchre_slpi_skel.so \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/lowi_client.so:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/lowi_client.so \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/mmecns_module.so.1:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/mmecns_module.so.1 \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/smartbatching.napp_header:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/smartbatching.napp_header \
+    vendor/google/taimen/proprietary/vendor/dsp/sdsp/smartbatching.so:$(TARGET_COPY_OUT_VENDOR)/dsp/sdsp/smartbatching.so \
     vendor/google/taimen/proprietary/vendor/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/google/taimen/proprietary/vendor/etc/acdbdata/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Codec_cal.acdb \
     vendor/google/taimen/proprietary/vendor/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/General_cal.acdb \
@@ -374,22 +403,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/taimen/proprietary/vendor/firmware/widevine.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.mbn \
     vendor/google/taimen/proprietary/vendor/firmware/widevine.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.mdt \
     vendor/google/taimen/proprietary/vendor/firmware/wlanmdsp.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/wlanmdsp.mbn \
-    vendor/google/taimen/proprietary/vendor/lib/dsp/CFCMModule.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/CFCMModule.so.1 \
-    vendor/google/taimen/proprietary/vendor/lib/dsp/EtsiAmrWbPlusDecModule.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/EtsiAmrWbPlusDecModule.so.1 \
-    vendor/google/taimen/proprietary/vendor/lib/dsp/EtsiEaacPlusEncAndCmnModule.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/EtsiEaacPlusEncAndCmnModule.so.1 \
-    vendor/google/taimen/proprietary/vendor/lib/dsp/HeaacDecoderModule.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/HeaacDecoderModule.so.1 \
-    vendor/google/taimen/proprietary/vendor/lib/dsp/HpMp2DecoderModule.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/HpMp2DecoderModule.so.1 \
-    vendor/google/taimen/proprietary/vendor/lib/dsp/SAPlusCmnModule.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/SAPlusCmnModule.so.1 \
-    vendor/google/taimen/proprietary/vendor/lib/dsp/activity.napp_header:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/activity.napp_header \
-    vendor/google/taimen/proprietary/vendor/lib/dsp/cc.napp_header:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/cc.napp_header \
-    vendor/google/taimen/proprietary/vendor/lib/dsp/elmyra.napp_header:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/elmyra.napp_header \
-    vendor/google/taimen/proprietary/vendor/lib/dsp/fastrpc_shell_0:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/fastrpc_shell_0 \
-    vendor/google/taimen/proprietary/vendor/lib/dsp/fluence_voiceplus_module.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/fluence_voiceplus_module.so.1 \
-    vendor/google/taimen/proprietary/vendor/lib/dsp/geofence.napp_header:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/geofence.napp_header \
-    vendor/google/taimen/proprietary/vendor/lib/dsp/gesture.napp_header:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/gesture.napp_header \
-    vendor/google/taimen/proprietary/vendor/lib/dsp/imu_cal.napp_header:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/imu_cal.napp_header \
-    vendor/google/taimen/proprietary/vendor/lib/dsp/mmecns_module.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/mmecns_module.so.1 \
-    vendor/google/taimen/proprietary/vendor/lib/dsp/smartbatching.napp_header:$(TARGET_COPY_OUT_VENDOR)/lib/dsp/smartbatching.napp_header \
     vendor/google/taimen/proprietary/vendor/mbn/mcfg/configs/mcfg_sw/generic/APAC/Reliance/Commercial/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/mbn/mcfg/configs/mcfg_sw/generic/APAC/Reliance/Commercial/mcfg_sw.mbn \
     vendor/google/taimen/proprietary/vendor/mbn/mcfg/configs/mcfg_sw/generic/AUS/Default/VoLTE/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/mbn/mcfg/configs/mcfg_sw/generic/AUS/Default/VoLTE/mcfg_sw.mbn \
     vendor/google/taimen/proprietary/vendor/mbn/mcfg/configs/mcfg_sw/generic/AUS/Telstra/VoLTE/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/mbn/mcfg/configs/mcfg_sw/generic/AUS/Telstra/VoLTE/mcfg_sw.mbn \
@@ -578,19 +591,6 @@ PRODUCT_PACKAGES += \
     sensors.msm8998 \
     vendor.qti.qcril.am@1.0 \
     libhalide_hexagon_remote_skel \
-    activity \
-    cc \
-    chre_drv_loc \
-    chre_drv_modem \
-    chre_drv_wifi \
-    chre_pal \
-    elmyra \
-    geofence \
-    gesture \
-    imu_cal \
-    libchre_slpi_skel \
-    lowi_client \
-    smartbatching \
     sensors.vl530l0.tof \
     libactuator_lc898214xd \
     libadm \

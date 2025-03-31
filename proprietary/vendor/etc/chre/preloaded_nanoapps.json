@@ -1,4 +1,4 @@
-{ "source_dir": "/vendor/lib/dsp",
+{ "source_dir": "/vendor/dsp/sdsp",
   "nanoapps": [
     "activity",
     "elmyra",
